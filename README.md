@@ -1,9 +1,6 @@
-# Your Project's Name
+# Website on Interstellar
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
-
-Essentially, this part is your sales pitch.
- 
+I want to create a website about interstellar which includes plot, cast and how they created the incredible cinematics in the movie and the background of the movie.
 ## Design Process
  
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
