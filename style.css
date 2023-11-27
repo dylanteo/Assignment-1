@@ -22,6 +22,7 @@ nav{
   width: 100%;
 }
 label.title1{
+  position: absolute;
   color: #0B0806;
   font-size: 35px;
   line-height: 80px;
@@ -29,6 +30,7 @@ label.title1{
   font-weight: bold;
 }
 .container{
+
   float: right;
   margin-right: 20px;
 }
@@ -91,5 +93,77 @@ a.select,a:hover{
 
   #checkbox:checked~ul{
     left:0;
+    
   }
+  .aboutdetails{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  #poster{
+    position: block;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    
+  }
+  
+  #poster2{
+    display:none;
+  }
+  #poster3{
+    display:none;
+  }
+  .abouttext{
+    justify-content: center;
+    margin-top: 125%;
+    max-width: 100%;
+  }
+
+  #development{
+    display: none;
+  }
+  #writing{
+    display: none;
+  }
+  
+}
+
+
+section.aboutdetails{
+  background-color: #F4E3B4;
+  position: static;
+  height: auto;
+  max-width: 100%;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+
+#poster{
+  position: absolute;
+  top: 150px;
+  margin-left: 15%;
+}
+#poster2{
+  position: relative;
+  top: 700px;
+  margin-left: 15%;
+  
+}
+#poster3{
+  position: absolute;
+  top: 1415px;
+  left: 15%;
+  
+  
+}
+.abouttext{
+  position: static;
+  font-size: 15px;
+  float: right;
+  padding-top: 2%;
+  padding-right: 50px;
+  width: 750px;
+  
 }
