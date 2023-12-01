@@ -324,7 +324,10 @@ div.plot-container{
 }
 .plot-video{
   padding-top: 20px;
-  
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: center;
 }
 .plot-container .slide{
   position: absolute;
@@ -347,6 +350,7 @@ div.plot-container{
   text-align:center;
 }
 
+
 .plot-container .right{
   right: 0;
 }
@@ -365,6 +369,9 @@ div.plot-container{
   display: none;
 }
 
+iframe{
+  border: 0;
+}
 /* Mobile Plot Styles */
 @media (max-width: 576px){
 
@@ -374,3 +381,4 @@ div.plot-container{
   }
   
 }
+
