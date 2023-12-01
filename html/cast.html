@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cast</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body id="castbody">
+    <!-- Navigation Bar -->
+    <nav>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="title1">Interstellar</label>
+        <ul class="container">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="/html/about.html" >About</a></li>
+          <li><a href="/html/cast.html" class="select">Cast</a></li>
+          <li><a href="/html/plot.html">Plot</a></li>
+        </ul>
+      </nav>
+    <!-- Container for each cast group -->
+    <div class="cast-container">
+        <!-- Cast group which is a container for 3 cast-members each -->
+        <div class="cast-group">
+            <div class="cast-member">
+                <img src="/img/matthew mcconaughey.jpg" alt="Matthew McConaughey" class="cast-photo">
+                <div class="cast-name">Matthew McConaughey</div>
+                <div class="cast-role">Cooper</div>
+                <div class="cast-films">Notable Films: Dallas Buyers Club, Mud</div>
+                <div class="cast-socials">
+                    <a href="https://twitter.com/McConaughey?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/officiallymcconaughey/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="/img/Anne Hathaway.jpg" alt="Anne Hathaway" class="cast-photo">
+                <div class="cast-name">Anne Hathaway</div>
+                <div class="cast-role">Brand</div>
+                <div class="cast-films">Notable Films: The Dark Knight Rises, Les Misérables</div>
+                <div class="cast-socials">
+                    <a href="https://www.facebook.com/Hathaway" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/annehathaway/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="/img/Jessica Chastain.jpg" alt="Jessica Chastain" class="cast-photo">
+                <div class="cast-name">Jessica Chastain</div>
+                <div class="cast-role">Murph</div>
+                <div class="cast-films">Notable Films: Zero Dark Thirty, Molly's Game</div>
+                <div class="cast-socials">
+                    <a href="https://twitter.com/jes_chastain" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/jessicachastain/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cast-group">
+            <div class="cast-member">
+                <img src="/img/David Gyasi.jpg" alt="David Gyasi" class="cast-photo">
+                <div class="cast-name">David Gyasi</div>
+                <div class="cast-role">Romilly</div>
+                <div class="cast-films">Notable Films: Cloud Atlas, The Dark Knight Rises</div>
+                <div class="cast-socials">
+                    <a href="https://twitter.com/thedavidgyasi?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/thedavidgyasi/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="/img/Wes Bentley.jpg" alt="Wes Bentley" class="cast-photo">
+                <div class="cast-name">Wes Bentley</div>
+                <div class="cast-role">Doyle</div>
+                <div class="cast-films">Notable Films: American Beauty, The Hunger Games</div>
+                <div class="cast-socials">
+                    <a href="#">Unknown</a>
+                    
+                </div>
+            </div>
+            <div class="cast-member">
+                <img src="/img/Michael Caine.jpg" alt="Michael Caine" class="cast-photo">
+                <div class="cast-name">Michael Caine</div>
+                <div class="cast-role">Profressor Brand</div>
+                <div class="cast-films">Notable Films: The Prestige, The Dark Knight</div>
+                <div class="cast-socials">
+                    <a href="https://www.facebook.com/michaelcaineofficial/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/michaelcaineofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Calling JavaScript function to slide between groups -->
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fa fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fas fa-angle-right"></span>
+        </div>
+    </div>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
