@@ -9,31 +9,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
   
     </head>
-    <body>
+  <body>
+  
+    <!-- Background Video -->
+   <video autoplay muted loop id="blackhole">
+     <source src="black hole.mp4" type="video/mp4">
+    </video>
+    <!-- Navigation Bar -->
+    <nav>
+       <!-- Checkbox for Mobile Menu -->
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="title1">Interstellar</label>
+      <!-- Navigation Links -->
+      <ul class="container">
+        <li><a href="index.html" class="select">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="plot.html">Plot</a></li>
+      </ul>
+      </nav>
+
       
-        <video autoplay muted loop id="blackhole">
-            <source src="black hole.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-        <nav>
-          <input type="checkbox" id="checkbox">
-          <label for="checkbox" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <label class="title1">Interstellar</label>
-          <ul class="container">
-            <li><a href="index.html" class="select">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cast.html">Cast</a></li>
-            <li><a href="plot.html">Plot</a></li>
-          </ul>
-        </nav>
-
-        </section>
-
     </body>
 </html>

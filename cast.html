@@ -9,10 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body id="castbody">
+    <!-- Navigation Bar -->
     <nav>
         <input type="checkbox" id="checkbox">
         <label for="checkbox" class="checkbtn">
@@ -26,7 +28,9 @@
           <li><a href="plot.html">Plot</a></li>
         </ul>
       </nav>
+    <!-- Container for each cast group -->
     <div class="cast-container">
+        <!-- Cast group which is a container for 3 cast-members each -->
         <div class="cast-group">
             <div class="cast-member">
                 <img src="img/matthew mcconaughey.jpg" alt="Matthew McConaughey" class="cast-photo">
@@ -91,7 +95,7 @@
                 </div>
             </div>
         </div>
-    
+        <!-- Calling JavaScript function to slide between groups -->
         <div onclick="side_slide(-1)" class="slide left">
             <span class="fa fa-angle-left"></span>
         </div>

@@ -1,3 +1,4 @@
+/* Global Reset Styles */
 *{
   padding:0;
   margin:0;
@@ -5,8 +6,9 @@
   list-style:none;
   box-sizing: border-box;
 }
-/* home page and top bar */
+/* Home Page and Top Bar Styles */
 #blackhole {
+  /* Styling for Background Video */
     position: fixed;
     right: 0;
     bottom: 0;
@@ -14,15 +16,18 @@
     min-height: 100%;
   }
 body{
+  /* Font Style */
   font-family: 'Space Mono', monospace;
 }
 nav{
+  /* Styling for Navigation Bar */
   position: absolute;
   background: rgba(139, 72, 43, 0.7);
   height: 80px;
   width: 100%;
 }
 label.title1{
+  /* Styling for Site Title */
   position: absolute;
   color: #0B0806;
   font-size: 35px;
@@ -31,7 +36,7 @@ label.title1{
   font-weight: bold;
 }
 .container{
-
+  /* Styling for Navigation Container */
   float: right;
   margin-right: 20px;
 }
@@ -50,6 +55,7 @@ label.title1{
 a.select,a:hover{
   background: #F4E3B4;
   transition: .5s;
+  border-radius: 100%;
 }
 .checkbtn{
   display: none;
@@ -57,7 +63,8 @@ a.select,a:hover{
 #checkbox{
   display: none;
 }
-@media (max-width: 992px){
+/* Mobile Menu Styles */
+@media (max-width: 768px){
 
 
   .checkbtn{
@@ -79,6 +86,7 @@ a.select,a:hover{
   }
   .container{
     position: fixed;
+    z-index: 10;
     width: 100%;
     height: 100vh;
     background: #F2D0BA;
@@ -102,11 +110,12 @@ a.select,a:hover{
   
 }
 
-/* about page*/
+/* About Page Styles */
 
-section.aboutdetails{
+section.about-container{
+  /* Styling for background of about page and about-container */
   display: flex;
-  flex: row;
+  flex-direction: row;
   background-color: #0B0806;
   position: static;
   height: fit-content;
@@ -118,21 +127,21 @@ section.aboutdetails{
 
 
 .poster-container{
+    /* Styling for Poster Container */
   display: flex;
   flex-direction: column;
   height: 100%;
   padding-top: 80px;
 
 }
-#poster2{
+#poster2, #poster3{
   padding-top: 30px
 }
-#poster3{
-  padding-top: 30px;
-}
+
   
 
-.abouttext{
+.about-text{
+  /* Styling for Text */
   position: static;
   color: white;
   font-size: 15px;
@@ -140,11 +149,11 @@ section.aboutdetails{
   padding-top: 2%;
   padding-right: 50px;
   width: 750px;
-  
 }
 
-@media (max-width: 992px){
-  section.aboutdetails{
+/* Mobile About Styles */
+@media (max-width: 768px){
+  section.about-container{
     display:flex;
     flex-direction: column;
     
@@ -167,11 +176,11 @@ section.aboutdetails{
   #poster3{
     display:none;
   }
-  .abouttext{
+  .about-text{
     text-align: center;
     margin-top: 10%;
     padding-left: 50px;
-    max-width: fit-content
+    width: 100%;
   }
 
   #development{
@@ -182,11 +191,13 @@ section.aboutdetails{
   }
 }
 
-/* cast page */
+/* Cast Page Styles */
 #castbody{
+  /* Background Color */
   background-color: #0B0806;
 }
 div.cast-container {
+  /* Styling for Cast Container */
   display:flex;
   flex-direction: column;
   overflow: hidden; 
@@ -197,6 +208,7 @@ div.cast-container {
 }
 
 .cast-member {
+  /* Styling for each individual member */
   flex-basis: calc(33% - 20px);
   box-shadow: 5px 4px 8px rgba(0,0,0,0.1);
   padding: 10px;
@@ -252,6 +264,7 @@ div.cast-container {
 }
 
 .slide span{
+  /* Styling of side buttons */
   position: relative;
   font-size: 35px;
   color: white;
@@ -268,26 +281,96 @@ div.cast-container {
 
 
 .cast-group .cast-member {
-  flex-basis: calc(33% - 20px); /* Adjust the 33% as needed */
+  flex-basis: calc(33% - 20px); 
 
 }
 .cast-group {
+  /* Styling for each cast group */
   display: flex;
   flex-flow: row wrap;
   gap: 30px;
   padding-right: 20px;
   padding-left: 30px;
-  gap: 30px; /* Space between cast members */
+  gap: 30px; 
 }
 
 .cast-group:nth-of-type(2) {
+  /* Hiding second cast group at start */
   display: none;
 }
 
-@media (max-width: 992px) {
+/* Mobile Cast Styles */
+@media (max-width: 768px) {
   .cast-group{
     flex-flow: column wrap;
     justify-content: center;
     margin-right: 5%;
   }
+}
+
+
+/* Plot Page Styles */
+#plotbody{
+  /* Background and text colors */
+  background-color: #0B0806;
+  color: white;
+}
+div.plot-container{
+  /* Styling of Plot Container */
+  display:flex;
+  flex-flow: column wrap;
+  padding-top: 100px;
+  gap: 20px;
+}
+.plot-video{
+  padding-top: 20px;
+  
+}
+.plot-container .slide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.plot-container .slide:hover{
+  background: rgba(255,255,255,0.2);
+}
+
+.plot-section{
+  /* Styling of each plot section */
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align:center;
+}
+
+.plot-container .right{
+  right: 0;
+}
+.plot-container .left{
+  left: 0;
+}
+
+/* Hiding of each plot section except first */
+.plot-section:nth-of-type(2) {
+  display: none;
+}
+.plot-section:nth-of-type(3) {
+  display: none;
+}
+.plot-section:nth-of-type(4) {
+  display: none;
+}
+
+/* Mobile Plot Styles */
+@media (max-width: 576px){
+
+  .videos{ /* Reduction of video sizes when it gets bigger than screen size */
+    width:300px;
+    height:200px;
+  }
+  
 }
