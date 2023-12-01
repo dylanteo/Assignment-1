@@ -35,19 +35,19 @@ var indexValue = 1;
 showgroup(1);
 function side_slide(e) {
     if (typeof indexValue === 'undefined' || isNaN(indexValue)) { // Re defining indexValue if undefined as I had issues with it
-        console.error("indexValue is undefined or NaN, re-initializing to 0");
+        console.error("indexValue is undefined or NaN, re-initializing to 0"); //testing
         indexValue = 1;
     }
-    console.log("Value received in side_slide: ", e);
-    console.log("Before updating, indexValue in side_slide:", indexValue);
+    console.log("Value received in side_slide: ", e); //testing
+    console.log("Before updating, indexValue in side_slide:", indexValue); //testing
     indexValue+=e;
     showgroup(indexValue)
-    console.log("Updated indexValue: ", indexValue);
+    console.log("Updated indexValue: ", indexValue); //testing
 }
 function showgroup(e){
     
     const group = document.querySelectorAll('.cast-group');
-    console.log("indexValue in showImg:", indexValue);
+    console.log("indexValue in showImg:", indexValue); //testing
     if(e > group.length){
         indexValue = 1
     }
@@ -64,19 +64,19 @@ var indexValue = 1;
 showplot(1);
 function side_slide1(e) {
     if (typeof indexValue === 'undefined' || isNaN(indexValue)) {
-        console.error("indexValue is undefined or NaN, re-initializing to 0");
+        console.error("indexValue is undefined or NaN, re-initializing to 0"); //testing
         indexValue = 1;
     }
-    console.log("Value received in side_slide: ", e);
-    console.log("Before updating, indexValue in side_slide:", indexValue);
+    console.log("Value received in side_slide: ", e); //testing
+    console.log("Before updating, indexValue in side_slide:", indexValue); //testing
     indexValue+=e;
     showplot(indexValue)
-    console.log("Updated indexValue: ", indexValue);
+    console.log("Updated indexValue: ", indexValue); //testing
 }
 function showplot(e){
     
     const section = document.querySelectorAll('.plot-section');
-    console.log("indexValue in showImg:", indexValue);
+    console.log("indexValue in showImg:", indexValue); //testing
     if(e > section.length){
         indexValue = 1
     }
